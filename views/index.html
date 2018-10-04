@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>File Metadata API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>File Metadata API</h1>
+      <h2>Coded by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a></h2>
+      <p>My project for the <a href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice" target="_blank">File Metadata Microservice challenge</a> as part of the curriculum for the Apis and Microservices Certification on <a href="https://www.freecodecamp.org" target="_blank">Free Code Camp</a>.</p>
+      <p>View the <a href="https://github.com/autumnchris/file-metadata-api" target="_blank">source code</a> for this project.</p>
+      <hr>
+    </header>
+    <main>
+      <h3>Project Usage</h3>
+      <p>Upload a file in the form below to get the corresponding JSON data for the file name, file type, and file size (in bytes).</p>
+      <form action="/api/fileanalyse" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <input type="file" name="upfile" required>
+        </div>
+        <div class="button-group">
+          <input type="submit" value="Upload">
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
