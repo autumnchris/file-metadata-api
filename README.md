@@ -4,6 +4,10 @@ My project for the [File Metadata Microservice challenge](https://learn.freecode
 
 ---
 
+## Demo
+
+View project demo at [https://autumnchris-file-metadata-api.herokuapp.com](https://autumnchris-file-metadata-api.herokuapp.com).
+
 ## Installation
 
 ```
