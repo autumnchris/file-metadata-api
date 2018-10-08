@@ -4,6 +4,13 @@ My project for the [File Metadata Microservice challenge](https://learn.freecode
 
 ---
 
+Built With
+* [Express.js](https://expressjs.com)
+* [Multer](https://github.com/expressjs/multer)
+* CSS3
+* HTML5
+* [Google Fonts](https://fonts.google.com)
+
 ## Demo
 
 View project demo at [https://autumnchris-file-metadata-api.herokuapp.com](https://autumnchris-file-metadata-api.herokuapp.com).
