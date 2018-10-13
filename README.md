@@ -4,9 +4,8 @@ My project for the [File Metadata Microservice challenge](https://learn.freecode
 
 ---
 
-Built With
+## Built With
 * [Express.js](https://expressjs.com)
-* [Multer](https://github.com/expressjs/multer)
 * CSS3
 * HTML5
 * [Google Fonts](https://fonts.google.com)
