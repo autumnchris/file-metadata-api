@@ -22,7 +22,7 @@
       <p>Upload a file in the form below to get the corresponding JSON data for the file name, file type, and file size (in bytes).</p>
       <form action="/api/fileanalyse" method="post" enctype="multipart/form-data">
         <div class="form-group">
-          <input type="file" name="upfile" required>
+          <input type="file" name="upfile" aria-label="upload file" required>
         </div>
         <div class="button-group">
           <input type="submit" value="Upload">
