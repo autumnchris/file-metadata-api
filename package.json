@@ -18,6 +18,7 @@
   },
   "homepage": "https://autumnchris-file-metadata.herokuapp.com",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.16.3",
     "multer": "^1.4.0"
   }

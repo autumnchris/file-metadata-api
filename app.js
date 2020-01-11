@@ -1,22 +1,22 @@
 const express = require('express');
-const multer  = require('multer');
+const indexRouter = require('./routes/index');
+const apiRouter = require('./routes/api');
 
-const upload = multer().single('upfile');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.set('views', `${__dirname}/views`);
+app.set('view engine', 'ejs');
+
 app.use(express.static(`${__dirname}/public`));
 
-app.post('/api/fileanalyse', upload, (req, res) => {
-  res.json({
-    name: req.file.originalname,
-    type: req.file.mimetype,
-    size: req.file.size
-  });
-});
+app.use('/', indexRouter);
+app.use('/api/fileanalyse', apiRouter);
 
-app.use((req, res) => {
-  res.status(404).sendFile(`${__dirname}/public/404.html`);
+app.use((req, res, next) => {
+    res.status(404).render('404.ejs', {title: 'Page not found | '});
 });
 
 app.listen(port, console.log(`Server is listening at port ${port}.`));
+
+module.exports = app;
