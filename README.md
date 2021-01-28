@@ -9,7 +9,9 @@ My project for the [File Metadata Microservice challenge](https://learn.freecode
 * [EJS](https://ejs.co)
 * CSS3
 * [Normalize.css](https://necolas.github.io/normalize.css)
+* JavaScript
 * [Google Fonts](https://fonts.google.com)
+* [Font Awesome](https://fontawesome.com)
 
 ## Demo
 
