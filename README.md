@@ -12,18 +12,27 @@ My project for the [File Metadata Microservice challenge](https://learn.freecode
 * JavaScript
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com)
+* [nodemon](https://nodemon.io)
 
 ## Demo
 
 View project demo at [https://autumnchris-file-metadata.herokuapp.com](https://autumnchris-file-metadata.herokuapp.com).
 
-## Installation
+## Instructions
 
+After forking and cloning, navigate to the repository in your command line and install the NPM packages:
 ```
-$ git clone https://github.com/autumnchris/file-metadata-api.git
-$ cd file-metadata-api
-$ npm install
-$ npm start
+npm install
 ```
 
-Go to `http://localhost:3000`.
+Run the following script in your command line if starting the repository in development mode:
+```
+npm run dev
+```
+
+Run the following script in your command line if starting the repository in production mode:
+```
+npm start
+```
+
+Once the server is running, go to `http://localhost:3000` in your browser.
