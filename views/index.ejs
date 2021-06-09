@@ -10,7 +10,15 @@
       <p>My project for the <a href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice" target="_blank">File Metadata Microservice challenge</a> as part of the curriculum for the Apis and Microservices Certification on <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>.</p>
       <p>View the <a href="https://github.com/autumnchris/file-metadata-api" target="_blank">source code</a> for this project.</p>
       <hr>
-      <section>
+      <section id="file-upload-section">
+        <noscript>
+          <p class="message info-message"><span class="fa fa-info-circle fa-lg fa-fw"></span> This site uses JavaScript. Please enable JavaScript in your browser.</p>
+        </noscript>
+      </section>
+    </main>
+    <script>
+      const fileUploadSection = document.getElementById('file-upload-section');
+      fileUploadSection.innerHTML = `
         <h2>Project Usage</h2>
         <p>Upload a file in the form below to get the corresponding data for the file name, file type, and file size (in bytes).</p>
         <form class="file-upload-form" action="/api/fileanalyse" method="post" enctype="multipart/form-data">
@@ -20,10 +28,8 @@
             <p class="file-upload-file-name">No file selected</p>
           </div>
           <input type="submit" class="button" value="Submit">
-        </form>
-      </section>
-    </main>
-    <script>
+        </form>`;
+
       const fileInput = document.getElementById('file-upload-input');
       const formErrorMessage = document.createElement('p');
       formErrorMessage.classList.add('message', 'error-message');
