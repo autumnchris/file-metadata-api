@@ -1,6 +1,8 @@
 # File Metadata API
 
-My project for the [File Metadata Microservice challenge](https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice) as part of the curriculum for the Apis and Microservices Certification on [freeCodeCamp](https://www.freecodecamp.org).
+An Express.js API that takes a submitted file and returns its file name, file type, and file size.
+
+Inspired by the [File Metadata Microservice challenge](https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice) as part of the curriculum for the [APIs and Microservices Certification](https://www.freecodecamp.org/learn/apis-and-microservices) on [freeCodeCamp](https://www.freecodecamp.org).
 
 ---
 

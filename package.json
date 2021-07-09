@@ -1,7 +1,7 @@
 {
   "name": "file-metadata-api",
   "version": "1.0.0",
-  "description": "My project for the File Metadata Microservice challenge as part of the curriculum for the Apis and Microservices Certification on freeCodeCamp.",
+  "description": "An Express.js API that takes a submitted file and returns its file name, file type, and file size.",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app",
