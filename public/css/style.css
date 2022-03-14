@@ -1,11 +1,14 @@
 /* BASE PAGE STYLES */
 
-html {
-  background: transparent;
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: hsl(0, 0%, 100%);
+}
+
+html {
+  background: transparent;
   font-family: Oxygen, sans-serif;
+  font-size: 0.9rem;
   height: 100%;
   letter-spacing: 1px;
 }
@@ -14,7 +17,7 @@ body {
   background: hsl(0, 0%, 11%);
   background: -o-linear-gradient(330deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
   background: linear-gradient(120deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
-  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
   min-height: 100%;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
@@ -32,11 +35,7 @@ header {
 main {
   margin: 0 auto;
   max-width: 600px;
-  padding: 5px 0 6rem;
-}
-
-section {
-  padding-top: 30px;
+  padding-bottom: 6rem;
 }
 
 h1,
@@ -45,44 +44,20 @@ h3,
 h4,
 h5,
 h6 {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   margin-top: 0;
 }
 
-/* BASE ELEMENT STYLES */
-
-div,
-header,
-main,
-section,
-p,
-form,
-input,
-hr {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+h1 {
+  letter-spacing: 4px;
 }
 
-p {
-  line-height: 1.5;
-  margin: 20px 0;
+h2 {
+  letter-spacing: 3px;
+  text-align: center;
 }
 
-hr {
-  border: 0;
-  border-bottom: 1px solid hsl(0, 0%, 60%);
-}
-
-button,
-button:hover,
-button:active,
-button:focus,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
+section {
+  padding-top: 30px;
 }
 
 a,
@@ -111,6 +86,41 @@ textarea:focus,
   outline: none;
 }
 
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+p {
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+}
+
+.api-description {
+  padding-top: 5px;
+  text-align: left;
+}
+
+/* Button styles */
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 .button,
 .button:visited,
 .button:hover,
@@ -123,7 +133,7 @@ textarea:focus,
   cursor: pointer;
   letter-spacing: 3px;
   line-height: normal;
-  margin-top: 20px;
+  margin: 20px 5px 0;
   padding: 10px;
   width: auto;
 }
@@ -133,26 +143,7 @@ textarea:focus,
   text-decoration: none;
 }
 
-.message {
-  border-radius: 5px;
-  line-height: 1.55;
-  margin: 20px auto;
-  max-width: 800px;
-  padding: 15px 10px;
-  text-align: center;
-}
-
-/* SPECIFIC ELEMENT STYLES */
-
-h1 {
-  letter-spacing: 4px;
-}
-
-h2 {
-  letter-spacing: 3px;
-  text-align: center;
-}
-
+/* Form styles */
 form {
   padding-bottom: 25px;
   text-align: center;
@@ -162,31 +153,14 @@ form {
   padding-top: 28px;
 }
 
-.file-group {
-  background: hsla(0, 0%, 0%, 0.2);
+/* Message styles */
+.message {
   border-radius: 5px;
-  margin: 0 auto;
-  max-width: 400px;
-  padding: 40px 20px 20px;
-}
-
-.file-upload-input {
-  border: 0;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0.1px;
-  z-index: -1;
-}
-
-.file-upload-file-name {
-  overflow: hidden;
-  margin-bottom: 0;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+  text-align: center;
 }
 
 .error-message {
@@ -195,23 +169,11 @@ form {
   color: hsl(349, 96%, 26%);
 }
 
-.info-message {
-  background: hsl(204, 100%, 95%);
-  border: 1px solid hsl(204, 100%, 90%);
-  color: hsl(204, 100%, 26%);
-}
-
-noscript .info-message {
-  margin: 0 auto;
-  min-width: 280px;
-  text-align: center;
-}
-
 /* MEDIA QUERIES */
 
 @media all and (min-width: 500px) {
 
-  body {
+  html {
     font-size: inherit;
   }
 }

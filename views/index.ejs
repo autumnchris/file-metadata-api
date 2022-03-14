@@ -1,53 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <%- include('./partials/head') -%>
-  <body>
-    <header>
-      <h1>File Metadata API</h1>
-      <p>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a> &copy; <%= new Date().getFullYear(); %></p>
-    </header>
-    <main>
-      <p>An API that takes a submitted file and returns its file name, file type, and file size.</p>
-      <p>View the <a href="https://github.com/autumnchris/file-metadata-api" target="_blank">source code</a> for this project.</p>
-      <hr>
-      <section id="file-upload-section">
-        <noscript>
-          <p class="message info-message"><span class="fa fa-info-circle fa-lg fa-fw"></span> This site uses JavaScript. Please enable JavaScript in your browser.</p>
-        </noscript>
-      </section>
-    </main>
-    <script>
-      const fileUploadSection = document.getElementById('file-upload-section');
-      fileUploadSection.innerHTML = `
-        <h2>Project Usage</h2>
-        <p>Upload a file in the form below to get the corresponding data for the file name, file type, and file size (in bytes).</p>
-        <form class="file-upload-form" action="/api/fileanalyse" method="post" enctype="multipart/form-data">
-          <div class="form-group file-group">
-            <input type="file" class="file-upload-input" name="upfile" id="file-upload-input">
-            <label class="button file-upload-label" for="file-upload-input" id="file-upload-label">Select a File</label>
-            <p class="file-upload-file-name">No file selected</p>
-          </div>
-          <input type="submit" class="button" value="Submit">
-        </form>`;
-
-      const fileInput = document.getElementById('file-upload-input');
-      const formErrorMessage = document.createElement('p');
-      formErrorMessage.classList.add('message', 'error-message');
-      formErrorMessage.innerHTML = `<span class="fa fa-exclamation-circle fa-lg fa-fw"></span> Please select a file to submit the form.`;
-      let fileNameMessage = 'No file selected';
-
-      document.getElementById('file-upload-input').addEventListener('change', event => {
-        event.target.files.length ? fileNameMessage = event.target.files[0].name : fileNameMessage = 'No file selected';
-        document.querySelector('.file-upload-file-name').innerHTML = fileNameMessage;
-      }, false);
-
-      document.querySelector('.file-upload-form').addEventListener('submit', event => {
-
-        if (fileNameMessage === 'No file selected') {
-          event.preventDefault();
-          document.querySelector('main section').appendChild(formErrorMessage);
-        }
-      });
-    </script>
-  </body>
-</html>
+<%- include ('./partials/header-content') -%>
+<main>
+  <section>
+    <h2>Project Usage</h2>
+    <p><a href="/api/fileanalyse" target="_self">Upload a file</a> to get the corresponding data for the file name, file type, and file size.</p>
+  </section>
+</main>

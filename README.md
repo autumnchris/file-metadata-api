@@ -11,14 +11,13 @@ Inspired by the [File Metadata Microservice challenge](https://learn.freecodecam
 * [EJS](https://ejs.co)
 * CSS3
 * [Normalize.css](https://necolas.github.io/normalize.css)
-* JavaScript
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com)
 * [nodemon](https://nodemon.io)
 
 ## Demo
 
-View project demo at [https://autumnchris-file-metadata.herokuapp.com](https://autumnchris-file-metadata.herokuapp.com).
+View project demo at [https://autumnchris-file-metadata.herokuapp.com/api](https://autumnchris-file-metadata.herokuapp.com/api).
 
 ## Instructions
 
