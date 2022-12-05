@@ -17,7 +17,7 @@ Inspired by the [File Metadata Microservice challenge](https://learn.freecodecam
 
 ## Demo
 
-View project demo at [https://autumnchris-file-metadata.herokuapp.com/api](https://autumnchris-file-metadata.herokuapp.com/api).
+View project demo at [https://autumnchris-file-metadata-api.onrender.com/api](https://autumnchris-file-metadata-api.onrender.com/api).
 
 ## Instructions
 

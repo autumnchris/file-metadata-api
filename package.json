@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/file-metadata-api/issues"
   },
-  "homepage": "https://autumnchris-file-metadata.herokuapp.com/api",
+  "homepage": "https://autumnchris-file-metadata-api.onrender.com/api",
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.16.3",
