@@ -2,7 +2,7 @@
 
 An Express.js API that takes a submitted file and returns its file name, file type, and file size.
 
-Inspired by the [File Metadata Microservice challenge](https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice) as part of the curriculum for the [APIs and Microservices Certification](https://www.freecodecamp.org/learn/apis-and-microservices) on [freeCodeCamp](https://www.freecodecamp.org).
+Inspired by the [File Metadata Microservice challenge](https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice) as part of the curriculum for the [Back End Development and APIs Certification](https://www.freecodecamp.org/learn/back-end-development-and-apis) on [freeCodeCamp](https://www.freecodecamp.org).
 
 ---
 
