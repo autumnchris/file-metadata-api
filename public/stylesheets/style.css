@@ -152,7 +152,6 @@ hr {
 
 .button:hover {
   background: hsl(270, 100%, 82%);
-  text-decoration: none;
 }
 
 /* Form styles */
@@ -163,6 +162,13 @@ form {
 
 .form-group {
   padding-top: 28px;
+}
+
+.button[type=submit],
+.button[type=submit]:hover,
+.button[type=submit]:active,
+.button[type=submit]:focus {
+  font-weight: 400;
 }
 
 /* Message styles */
